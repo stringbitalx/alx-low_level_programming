@@ -12,7 +12,12 @@ int main(void)
 {
 	int a;
 
-	for (a = 061; a < 07A; a++)
+	for (a = 48; a < 58; a++)
+	{
+		putchar(a);
+	}
+	
+	for (a = 97; A < 103, A++)
 	{
 		putchar(a);
 	}
