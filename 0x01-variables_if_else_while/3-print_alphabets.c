@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
 	char lower[26] = "abcdefghijklmnopqrstuvwxyz";
 	char upper[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -20,7 +20,7 @@ int main (void)
 		putchar(lower[i]);
 	}
 
-	for(a = 0; a < 26; a++)
+	for (a = 0; a < 26; a++)
 	{
 		putchar(upper[a]);
 	}
