@@ -3,13 +3,14 @@
 /**
  * main - prints _putchar
  *
- * is written 
+ * is written
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
+	putchar('');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
@@ -18,6 +19,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	
 	return (0);
 }
