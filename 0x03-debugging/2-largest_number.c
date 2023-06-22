@@ -11,13 +11,24 @@
  * Return: largest number
  */
 
-int largest_number(int a, int b, int c)
+int largest_number(int a, int b, int c,)
 {
-	if (a == b && b == c)
-	{
-		return -1;
-	}
-
-	int largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
-	return (largest);
+int largest;
+if (a > b && a > c)
+{
+largest = a;
+}
+else if (a > b && c > a)
+{
+largest = c;
+}
+else if (b > c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
+return (largest);
 }
