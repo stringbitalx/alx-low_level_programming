@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98m - prints all natural numbers in range 0-98.
+ * print_to_98 - prints all natural numbers in range 0-98.
  * @n: the number to begin counting at n.
  */
 
