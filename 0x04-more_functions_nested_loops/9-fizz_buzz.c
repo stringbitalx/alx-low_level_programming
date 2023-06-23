@@ -1,25 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers 0-100,
- * 	divisibles of 3 is Fizz,
- * 	divisibles of 5 is Buzz,
- * 	divisibles of both 3 and 5 is FizzBuzz.
- * @num: digit to be printed
+ * main - print fizz buzz
+ * Return: 0
  */
 
-void main(num)
+int main(void)
 {
-	for (num = 1; num <= 100; num++)
+	int i;
+
+	for (i = 1; i < 100; i++)
 	{
-		if (num % 3 == 0)
-			printf("Fizz ");
-		else if (num % 5 == 0)
-			printf("Buzz ");
-		else if (num % 3 == 0 && num % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz ");
+		else if (i % 3 == 0)
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
 		else
-			printf("%d ", num);
+			printf("%d ", i);
 	}
-	return;
+		printf("Buzz\n");
+		return (0);
 }
+
+
+
