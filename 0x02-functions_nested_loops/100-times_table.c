@@ -13,12 +13,12 @@ void print_times_table(int n)
 	if (n > 15 || n < 0)
 		return;
 
-	for (column = 0; column <= n; column ++)
+	for (column = 0; column <= n; column++)
 	{
 		for (row = 0; row <= n; row++)
 		{
 			multiple = row * column;
-			_putchars(multiple + '0')
+			_putchar(multiple + '0')
 		}
 
 		_putchar("\n");
