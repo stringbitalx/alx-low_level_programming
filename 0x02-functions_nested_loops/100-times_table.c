@@ -18,9 +18,39 @@ void print_times_table(int n)
 		for (row = 0; row <= n; row++)
 		{
 			multiple = row * column;
-			_putchar(multiple + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (multiple <= 9)
+			{
+				_putchar(multiple + '0');
+				if (row != n)
+				{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				}
+			}
+			else if (multiple > 9 && multiple <= 99)
+			{
+				_putchar((multiple / 10) + '0');
+				_putchar((multiple % 10) + '0');
+				if (row != n)
+				{
+				_putchar(',');
+                                _putchar(' ');
+				_putchar(' ');
+				}
+			}
+			else if (multiple > 99)
+			{
+				_putchar((multiple / 100) + '0');
+				_putchar(((multiple / 10) %10) + '0');
+				_putchar((multiple % 10) + '0');
+				if (row != n)
+				{
+				_putchar(',');
+                                _putchar(' ');
+				}
+			}
 		}
 
 		_putchar('\n');
