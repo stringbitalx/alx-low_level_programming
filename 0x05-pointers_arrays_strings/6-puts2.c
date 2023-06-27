@@ -12,7 +12,7 @@ void puts2(char *str)
 	int counter1 = strlen(str);
 	int even = 0;
 
-	while (even <= counter1)
+	while (even < counter1)
 	{
 		_putchar(str[even]);
 		even = even + 2;
