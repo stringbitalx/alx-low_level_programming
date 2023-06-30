@@ -3,7 +3,7 @@
 /**
  * string_toupper - changes lowercase letters to uppercase
  * @n: pointer to string to be used
- * Return: n 
+ * Return: n
  */
 
 char *string_toupper(char *n)
@@ -16,5 +16,5 @@ char *string_toupper(char *n)
 			n[i] -= 32;
 		i++;
 	}
-	return(n);
+	return (n);
 }
