@@ -2,7 +2,7 @@
 
 /**
  * print_chessboard - prints the chess board
- * @a[8]: pointer to 8th row 2d array a.
+ * @a: an array.
  * Return: 0 Success
  */
 
