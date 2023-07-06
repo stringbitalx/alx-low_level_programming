@@ -7,7 +7,7 @@ int actual_prime(int n, int i);
  * @n: input integer
  * Return: 1 (Success)
  */
-int _is_prime_number(int n);
+int _is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
@@ -20,11 +20,11 @@ int _is_prime_number(int n);
  * @i: counter variable
  */
 
-int actual_prime(int n, int i);
+int actual_prime(int n, int i)
 {
 	if ( i == 1)
 		return (1);
 	if (n % 1 == 0 && i > 1)
-		return (0)
+		return (0);
 	return (actual_prime (n, i-1));
 }
