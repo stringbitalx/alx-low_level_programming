@@ -3,11 +3,11 @@
 int actual_prime(int n, int i);
 
 /**
- * _is_prime_number - checks if input integer is a prime number
+ * is_prime_number - checks if input integer is a prime number
  * @n: input integer
  * Return: 1 (Success)
  */
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
@@ -24,7 +24,7 @@ int actual_prime(int n, int i)
 {
 	if ( i == 1)
 		return (1);
-	if (n % 1 == 0 && i > 1)
+	if (n % i == 0 && i > 1)
 		return (0);
 	return (actual_prime (n, i-1));
 }
