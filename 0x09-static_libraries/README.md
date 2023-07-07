@@ -1,1 +1,1 @@
-C - static libraries
+ C static and dynamic libraries
