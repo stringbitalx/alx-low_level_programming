@@ -10,13 +10,17 @@
 
 int main(int argc, char **argv)
 {
-	int product, i;
+	int product;
 
-	i = 1;
 	if (argc > 1)
 	{
-		product = _atoi(argv[i]) * _atoi(argv[i += 1]);
+		product = _atoi(argv[1]) * _atoi(argv[2]);
 		printf("%d\n", product);
+	}
+	else
+	{
+		printf ("error\n");
+		return (1);
 	}
 	return (0);
 }
