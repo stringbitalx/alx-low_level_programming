@@ -16,8 +16,8 @@ int main(int argc, char **argv)
 	i = 1;
 	if (argc > 1)
 	{
-			product = atoi(argv[i]) * atoi(argv[i += 1]);
-			printf("%d\n", product);
+		product = _atoi(argv[i]) * _atoi(argv[i += 1]);
+		printf("%d\n", product);
 	}
 	else
 	{
