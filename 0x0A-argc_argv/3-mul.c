@@ -19,10 +19,5 @@ int main(int argc, char **argv)
 		product = _atoi(argv[i]) * _atoi(argv[i += 1]);
 		printf("%d\n", product);
 	}
-	else
-	{
-		printf("error\n");
-		return (1);
-	}
 	return (0);
 }
