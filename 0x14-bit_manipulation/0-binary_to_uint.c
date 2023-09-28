@@ -33,7 +33,7 @@ unsigned int binary_to_uint(const char *b)
 		if (*b == 1)
 			base *= 1;
 		else
-			base *= 0;	
+			base *= 0;
 		value += base;
 	}
 		return (value);
