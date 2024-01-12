@@ -12,7 +12,7 @@
  *
  * Description: doubly linked list structure
  */
-typredef struct dlistint_s
+typedef struct dlistint_s
 {
 	int n;
 	struct dlistint_s *prev;
